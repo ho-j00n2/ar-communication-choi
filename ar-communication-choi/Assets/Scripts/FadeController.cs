@@ -9,6 +9,7 @@ public class FadeController : MonoBehaviour
     public bool isFadeIn;
     public GameObject panel;
     public Button targetButton; // 연결할 버튼
+    public string sceneName;
     private CanvasGroup canvasGroup;
     private Action onCompleteCallback;
 
@@ -61,7 +62,7 @@ public class FadeController : MonoBehaviour
         if (targetButton != null)
         {
             targetButton.onClick.RemoveAllListeners(); // 중복 방지를 위해 모든 리스너 제거
-            targetButton.onClick.AddListener(() => FadeOutAndLoadScene("3DModelTest"));
+            targetButton.onClick.AddListener(() => FadeOutAndLoadScene(sceneName));
         }
 
         // 초기 설정

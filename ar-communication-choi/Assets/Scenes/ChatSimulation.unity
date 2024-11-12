@@ -238,6 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChanger: {fileID: 1290846704}
   textManager: {fileID: 35053118}
+  faceController: {fileID: 35053119}
 --- !u!114 &35053118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1093,6 +1094,7 @@ MonoBehaviour:
   isFadeIn: 0
   panel: {fileID: 1353429203}
   targetButton: {fileID: 1007743565}
+  sceneName: 3DModelTest
   fadeDuration: 1
 --- !u!1 &667822813
 GameObject:
